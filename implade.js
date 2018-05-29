@@ -51,7 +51,7 @@ client.on('message', async message => {
       .setTitle('ImpladeBot - Info')
       .setDescription('All of these version and status is on our information!')
       .addField('Version', 'IR-3.1')
-      .addField('This server is running on Heroku')
+      .addField('This server is running on', 'Heroku')
       .setImage(bot.user.avatarURL)
       .addField('Bot was created on', bot.user.createdAt)
       .addField('Bot name', bot.user.username)
@@ -64,7 +64,7 @@ client.on('message', async message => {
       .setDescription('This is our enemies list were put in here!')
       .addField('ZythronPE - Multi-games server', '------')
       .addField('29 May 2018 - present', 'BeckenPlayZMCPE as a creator of ZythronPE server are now enemies against with the leader of ImpladeDeveloped team and founder of ImpladeMC, it is Zadezter')
-      .addField('iRampage22 - ZythronPE Staff')
+      .addField('iRampage22 - ZythronPE Staff', '------')
       .addField('29 May 2018 - present', 'Rampage is also known as Elctrokid9182_YT or Elctro. He is rival of Zadezter. In August 2017, he raided MCGenotix for ZythronPE for some false reason, he said, "you are suck so stop taking our staff"')
       .setColor('#808000')
       .setFooter(`Requested by ${message.author.tag}`)
@@ -74,7 +74,7 @@ client.on('message', async message => {
     if (message.content === '$github') {
       let githubembed = new Discord.RichEmbed()
       .setTitle('ImpladeDeveloped - Github Team')
-      .setURL('https://github.com/ImpladeDeveloped/')
+      .setURL('https://github.com/ImpladeDeveloped')
       .setDescription('We made some source codes for PHP and JS. Check it our repositories now!')
       .setColor('#000000')
       return message.channel.send(githubembed);
