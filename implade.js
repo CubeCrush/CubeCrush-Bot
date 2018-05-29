@@ -25,7 +25,7 @@ client.on('message', async message => {
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
-    }
+    };
 
     if (message.content === '$implactor') {
       let implactorembed = new Discord.RichEmbed()
@@ -35,7 +35,7 @@ client.on('message', async message => {
       .addField('GitHub', 'https://github.com/ImpladeDeveloped')
       .addField('Download via Poggit', 'https://poggit.pmmp.io/ci/ImpladeDeveloped/Implactor')
       return message.channel.send(implactorembed);
-    }
+    };
 
     if (message.content === '$find') {
       let findembed = new Discord.RichEmbed()
@@ -45,7 +45,7 @@ client.on('message', async message => {
       .addField('Website', 'ImpladeDeveloped.github.io')
       .setColor('#FFFF00')
       return message.channel.send(findembed);
-    }
+    };
 
     if (message.content === '$botinfo') {
       let botinfoembed = new Discord.RichEmbed()
@@ -57,7 +57,7 @@ client.on('message', async message => {
       .addField('Bot was created on', bot.user.createdAt)
       .addField('Bot name', bot.user.username)
       return message.channel.send(botinfoembed);
-    }
+    };
 
     if (message.content === '$serverenemy') {
       let serverenemyembed = new Discord.RichEmbed()
@@ -68,7 +68,7 @@ client.on('message', async message => {
       .setColor('#808000')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(serverenemyembed);
-    }
+    };
 
     if (message.content === '$github') {
       let githubembed = new Discord.RichEmbed()
@@ -77,7 +77,7 @@ client.on('message', async message => {
       .setDescription('We made some source codes for PHP and JS. Check it our repositories now!')
       .setColor('#000000')
       return message.channel.send(githubembed);
-    }
+    };
 
     if (message.content === '$dcinvite') {
       let dcinviteembed = new Discord.RichEmbed()
@@ -85,7 +85,7 @@ client.on('message', async message => {
       .setURL('https://discord.gg/V8UhE9b')
       .setDescription('This is our developer team server which coding a Pocketmine-MP PHP plugin and Discord bot basic with JS code!')
       return message.channel.send(dcinviteembed);
-    }
+    };
     
    if (message.content === '$picture') {
      let pictureembed = new Discord.RichEmbed()
@@ -94,7 +94,7 @@ client.on('message', async message => {
      .setImage(message.author.avatarURL + "?size=2048") 
      .setFooter(`Requested by ${message.author.tag}`)
      return message.channel.send(pictureembed)
-   }
+   };
    
    if (message.content === '$imc') {
       let imcembed = new Discord.RichEmbed()
@@ -102,7 +102,7 @@ client.on('message', async message => {
       .addField('N/A')
       .setDescription('Coming soon!')
       return message.channel.send(imcembed);
-    }    
+    };   
 });
 
 client.login(process.env.BOT_TOKEN);
