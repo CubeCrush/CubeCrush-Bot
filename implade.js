@@ -4,7 +4,6 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setStatus('dnd');
     client.user.setActivity('using Implactor vIR-1.2.2', {type: 'PLAYING'});
-    console.log('Heyo, bot!');
 });
 
 client.on('message', async message => {
@@ -19,8 +18,8 @@ client.on('message', async message => {
       .addField('$dcinvite', 'Join our developer team on Discord server!')
       .addField('$serverenemy', 'List of our current enemy!')
       .addField('$picture', 'Take your picture from your Discord profile!')
-      .addField('$implactor', 'View the New Updates that have bene made to the Bot!')
-      .addField('$botinfo', 'VIEW Bof Information and Versions')
+      .addField('$implactor', 'Implactor - Pocketmine-MP plugin!')
+      .addField('$botinfo', 'See this bot about infomations!')
       .addField('$imc', 'ImpladeMC Discord Server. Minecraft BE or Win10 players can join!')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
