@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('using Implactor vIR-1.2.2', {type: 'PLAYING'});
+    client.user.setActivity('using Implactor vIR-1.2.3', {type: 'PLAYING'});
 });
 
 client.on('message', async message => {
@@ -60,10 +60,12 @@ client.on('message', async message => {
 
     if (message.content === '$serverenemy') {
       let serverenemyembed = new Discord.RichEmbed()
-      .setTitle('?[ Enemy ]?')
+      .setTitle('[ Enemy ]')
       .setDescription('This is our enemies list were put in here!')
-      .addField('ZythronPE')
-      .addField('In 29 May 2018, BeckenPlayZMCPE, creator of ZythronPE is now enemies with Zadezter, founder of ImpladeMC!')
+      .addField('ZythronPE - Multi-games server', '------')
+      .addField('29 May 2018 - present', 'BeckenPlayZMCPE as a creator of ZythronPE server are now enemies against with the leader of ImpladeDeveloped team and founder of ImpladeMC, it is Zadezter')
+      .addField('iRampage22 - ZythronPE Staff')
+      .addField('29 May 2018 - present', 'Rampage is also known as Elctrokid9182_YT or Elctro. He is rival of Zadezter. In August 2017, he raided MCGenotix for ZythronPE for some false reason, he said, "you are suck so stop taking our staff"')
       .setColor('#808000')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(serverenemyembed);
@@ -88,7 +90,7 @@ client.on('message', async message => {
     
    if (message.content === '$picture') {
      let pictureembed = new Discord.RichEmbed()
-     .setTitle('Heyo, this is your profile picture!')
+     .setTitle('Heyo, this is your profile picture?')
      .setColor('RANDOM')
      .setImage(message.author.avatarURL + "?size=2048") 
      .setFooter(`Requested by ${message.author.tag}`)
