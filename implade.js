@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
-const superagent = require('superagent');
 const client = new Discord.Client();
-const config = require('./config.json');
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
@@ -11,26 +9,25 @@ client.on('ready', () => {
 
 client.on('message', async message => {
     if (message.author.bot) return;
-    let prefix = config.prefix;
 
-    if (message.content === prefix + 'help') {
+    if (message.content === '$help') {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- ImpladeBot | Commands -')
       .setDescription('Some of commands only available by adding with Zadezter!')
-      .addField('/help', 'ImpladeBot command list!')
-      .addField('/find', 'Check our websites!')
-      .addField('dcinvite', 'Join our developer team on Discord server!')
-      .addField('/serverenemy', 'List of our current enemy!')
-      .addField('/picture', 'Take your picture from your Discord profile!')
-      .addField('/implactor', 'View the New Updates that have bene made to the Bot!')
-      .addField('/botinfo', 'VIEW Bof Information and Versions')
-      .addField('/imc', 'ImpladeMC Discord Server. Minecraft BE or Win10 players can join!')
+      .addField('$help', 'ImpladeBot command list!')
+      .addField('$find', 'Check our websites!')
+      .addField('$dcinvite', 'Join our developer team on Discord server!')
+      .addField('$serverenemy', 'List of our current enemy!')
+      .addField('$picture', 'Take your picture from your Discord profile!')
+      .addField('$implactor', 'View the New Updates that have bene made to the Bot!')
+      .addField('$botinfo', 'VIEW Bof Information and Versions')
+      .addField('$imc', 'ImpladeMC Discord Server. Minecraft BE or Win10 players can join!')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
     }
 
-    if (message.content === prefix + 'implactor') {
+    if (message.content === '$implactor') {
       let implactorembed = new Discord.RichEmbed()
       .setTitle('Implactor - Pocketmine-MP plugin')
       .setDescription('A plugin with having some features for Minecraft: Bedrock')
@@ -40,7 +37,7 @@ client.on('message', async message => {
       return message.channel.send(implactorembed);
     }
 
-    if (message.content === prefix + 'find') {
+    if (message.content === '$find') {
       let findembed = new Discord.RichEmbed()
       .setTitle('Check our latest updates in these websites!')
       .addField('YouTube', 'https://www.youtube.com/channel/UCZXM-i2izX8DfIx8_Lel0Cg')
@@ -50,7 +47,7 @@ client.on('message', async message => {
       return message.channel.send(findembed);
     }
 
-    if (message.content === prefix + 'botinfo') {
+    if (message.content === '$botinfo') {
       let botinfoembed = new Discord.RichEmbed()
       .setTitle('ImpladeBot - Info')
       .setDescription('All of these version and status is on our information!')
@@ -62,7 +59,7 @@ client.on('message', async message => {
       return message.channel.send(botinfoembed);
     }
 
-    if (message.content === prefix + 'serverenemy') {
+    if (message.content === '$serverenemy') {
       let serverenemyembed = new Discord.RichEmbed()
       .setTitle('?[ Enemy ]?')
       .setDescription('This is our enemies list were put in here!')
@@ -73,7 +70,7 @@ client.on('message', async message => {
       return message.channel.send(serverenemyembed);
     }
 
-    if (message.content === prefix + 'github') {
+    if (message.content === '$github') {
       let githubembed = new Discord.RichEmbed()
       .setTitle('ImpladeDeveloped - Github Team')
       .setURL('https://github.com/ImpladeDeveloped/')
@@ -82,7 +79,7 @@ client.on('message', async message => {
       return message.channel.send(githubembed);
     }
 
-    if (message.content === prefix + 'dcinvite') {
+    if (message.content === '$dcinvite') {
       let dcinviteembed = new Discord.RichEmbed()
       .setTitle('ImpladeDeveloped - Discord Server Team')
       .setURL('https://discord.gg/V8UhE9b')
@@ -90,7 +87,7 @@ client.on('message', async message => {
       return message.channel.send(dcinviteembed);
     }
     
-   if (message.content === prefix + 'picture') {
+   if (message.content === '$picture') {
      let pictureembed = new Discord.RichEmbed()
      .setTitle('Heyo, this is your profile picture!')
      .setColor('RANDOM')
@@ -99,7 +96,7 @@ client.on('message', async message => {
      return message.channel.send(pictureembed)
    }
    
-   if (message.content === prefix + 'imc') {
+   if (message.content === '$imc') {
       let imcembed = new Discord.RichEmbed()
       .setTitle('ImpladeMC - MC:BE Discord Server')
       .addField('N/A')
