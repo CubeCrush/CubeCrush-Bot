@@ -60,11 +60,11 @@ client.on('message', async message => {
       let serverenemyembed = new Discord.RichEmbed()
       .setTitle('[ Enemy ]')
       .setDescription('This is our enemies list were put in here!')
-      .addField('ZythronPE - Multi-games server', ' ')
-      .addField('29 May 2018 - present', ' ')
+      .addField('ZythronPE - Multi-games server', '--')
+      .addField('29 May 2018 - present', '--')
       .setDescription('BeckenPlayZMCPE as a creator of ZythronPE server are now enemies against with the leader of ImpladeDeveloped team and founder of ImpladeMC, it is Zadezter')
-      .addField('iRampage22 - ZythronPE Staff', ' ')
-      .addField('29 May 2018 - present', ' ')
+      .addField('iRampage22 - ZythronPE Staff', '--')
+      .addField('29 May 2018 - present', '--')
       .setDescription('Rampage is also known as Elctrokid9182_YT or Elctro. He is rival of Zadezter. In August 2017, he raided MCGenotix for ZythronPE for some false reason, he said, "you are suck so stop taking our staff"')
       .setColor('#808000')
       .setFooter(`Requested by ${message.author.tag}`)
@@ -74,8 +74,8 @@ client.on('message', async message => {
     if (message.content === '$github') {
       let githubembed = new Discord.RichEmbed()
       .setTitle('ImpladeDeveloped - Github Team')
-      .addField('Click here to see our codes!', ' ')
-      .setURL('https://github.com/ImpladeDeveloped')
+      .addField('Click here to see our codes!', '--')
+      .addField('https://github.com/ImpladeDeveloped')
       .setDescription('We made some source codes for PHP and JS. Check it our repositories now!')
       .setColor('#000000')
       return message.channel.send(githubembed);
@@ -84,7 +84,7 @@ client.on('message', async message => {
     if (message.content === '$dcinvite') {
       let dcinviteembed = new Discord.RichEmbed()
       .setTitle('ImpladeDeveloped - Discord Server Team')
-      .addField('Click here to join!', ' ')
+      .addField('Click here to join!', '---')
       .setURL('https://discord.gg/V8UhE9b')
       .setDescription('This is our developer team server which coding a Pocketmine-MP PHP plugin and Discord bot basic with JS code!')
       return message.channel.send(dcinviteembed);
@@ -102,7 +102,7 @@ client.on('message', async message => {
    if (message.content === '$imc') {
       let imcembed = new Discord.RichEmbed()
       .setTitle('ImpladeMC - MC:BE Discord Server')
-      .addField('Click here to join our MC:BE server!', ' ')
+      .addField('Click here to join our MC:BE server!', '---')
       .addField('N/A')
       .setDescription('Coming soon!')
       return message.channel.send(imcembed);
