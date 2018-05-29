@@ -31,7 +31,7 @@ client.on('message', async message => {
       .setTitle('Implactor - Pocketmine-MP plugin')
       .setDescription('A plugin with having some features for Minecraft: Bedrock')
       .setColor('#FFFF00')
-      .addField('GitHub', 'https://github.com/ImpladeDeveloped')
+      .addField('GitHub', 'https://github.com/ImpladeDeveloped/Implactor')
       .addField('Download via Poggit', 'https://poggit.pmmp.io/ci/ImpladeDeveloped/Implactor')
       return message.channel.send(implactorembed);
     };
