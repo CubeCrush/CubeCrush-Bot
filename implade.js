@@ -15,7 +15,7 @@ client.on('message', async message => {
 
     if (message.content === prefix + 'help') {
       let helpembed = new Discord.RichEmbed()
-      .setTitle('-[ ImpladeBot | Commands ]-')
+      .setTitle('- ImpladeBot | Commands -')
       .setDescription('Some of commands only available by adding with Zadezter!')
       .addField('/help', 'ImpladeBot command list!')
       .addField('/find', 'Check our websites!')
@@ -24,7 +24,7 @@ client.on('message', async message => {
       .addField('/picture', 'Take your picture from your Discord profile!')
       .addField('/implactor', 'View the New Updates that have bene made to the Bot!')
       .addField('/botinfo', 'VIEW Bof Information and Versions')
-      .addField('/imc', 'ImpladeMC Discord Server [Minecraft BE or Win10 players can join!]')
+      .addField('/imc', 'ImpladeMC Discord Server. Minecraft BE or Win10 players can join!')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -32,8 +32,6 @@ client.on('message', async message => {
 
     if (message.content === prefix + 'implactor') {
       let implactorembed = new Discord.RichEmbed()
-      .setFooter(`So you found this almost similar to Essentials, ${message.author.tag}?`)
-
       .setTitle('Implactor - Pocketmine-MP plugin')
       .setDescription('A plugin with having some features for Minecraft: Bedrock')
       .setColor('#FFFF00')
@@ -53,7 +51,6 @@ client.on('message', async message => {
     }
 
     if (message.content === prefix + 'botinfo') {
-
       let botinfoembed = new Discord.RichEmbed()
       .setTitle('ImpladeBot - Info')
       .setDescription('All of these version and status is on our information!')
@@ -94,22 +91,21 @@ client.on('message', async message => {
     }
     
    if (message.content === prefix + 'picture') {
-     let avatarembed = new Discord.RichEmbed()
+     let pictureembed = new Discord.RichEmbed()
      .setTitle('Heyo, this is your profile picture!')
      .setColor('RANDOM')
      .setImage(message.author.avatarURL + "?size=2048") 
      .setFooter(`Requested by ${message.author.tag}`)
-     return message.channel.send(avatarembed)
+     return message.channel.send(pictureembed)
    }
    
    if (message.content === prefix + 'imc') {
       let imcembed = new Discord.RichEmbed()
       .setTitle('ImpladeMC - MC:BE Discord Server')
-      .setURL('N/A')
+      .addField('N/A')
       .setDescription('Coming soon!')
       return message.channel.send(imcembed);
-    }
-    
+    }    
 });
 
 client.login(process.env.BOT_TOKEN);
