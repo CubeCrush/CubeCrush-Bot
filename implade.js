@@ -21,6 +21,7 @@ client.on('message', async message => {
       .addField('$implactor', 'Implactor - Pocketmine-MP plugin!')
       .addField('$botinfo', 'See this bot about infomations!')
       .addField('$imc', 'ImpladeMC Discord Server. Minecraft BE or Win10 players can join!')
+      .addField('$friends', 'Zadezter put all of his friend list in command!')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -60,10 +61,8 @@ client.on('message', async message => {
       let serverenemyembed = new Discord.RichEmbed()
       .setTitle('[ Enemy ]')
       .setDescription('This is our enemies list were put in here!')
-      .addField('ZythronPE - Multi-games server', '--')
-      .addField('29 May 2018 - present', 'BeckenPlayZMCPE as a creator of ZythronPE server are now enemies against with the leader of ImpladeDeveloped team and founder of ImpladeMC, it is Zadezter')
-      .addField('iRampage22 - ZythronPE Staff', '--')
-      .addField('29 May 2018 - present', 'Rampage is also known as Elctrokid9182_YT or Elctro. He is rival of Zadezter. In August 2017, he raided MCGenotix for ZythronPE for some false reason, he said, "you are suck so stop taking our staff"')
+      .addField('ZythronPE - Multi-games server', 'Active in 2017 - 2018')
+      .addField('29 May 2018 - present', 'BeckenPlayZMCPE as a creator of ZythronPE server are now enemies against with the leader of ImpladeDeveloped team and founder of ImpladeMC, it is Zadezter! Also, Rampage is also known as Elctrokid9182_YT or Elctro. He is rival of Zadezter. In August 2017, he raided MCGenotix for ZythronPE for some false reason, he said, "you are suck so stop taking our staff"')
       .setColor('#808000')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(serverenemyembed);
@@ -100,6 +99,13 @@ client.on('message', async message => {
       .setTitle('ImpladeMC - MC:BE Discord Server')
       .addField('Click here to join our MC:BE server!', 'N/A')
       .setDescription('Coming soon!')
+      return message.channel.send(imcembed);
+    };   
+    
+    if (message.content === '$friends') {
+      let imcembed = new Discord.RichEmbed()
+      .setTitle('[ Friends on Implade ]')
+      .setDescription('This is some of people who is Zadezter`s friends on the list!')
       return message.channel.send(imcembed);
     };   
 });
