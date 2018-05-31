@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('using Implactor vIR-1.2.4', {type: 'STREAMING'});
+    client.user.setActivity('using Implactor vIR-1.2.4.1', {type: 'STREAMING'});
 });
 
 client.on('message', async message => {
@@ -21,7 +21,8 @@ client.on('message', async message => {
       .addField('$implactor', 'Implactor - Pocketmine-MP plugin!')
       .addField('$botinfo', 'See this bot about infomations!')
       .addField('$imc', 'ImpladeMC Discord Server. Minecraft BE or Win10 players can join!')
-      .addField('$friends', 'Zadezter put all of his friend list in command!')
+      .addField('$friends', 'Zadezter with his friends list in command!')
+      .addField('$enemies', 'Zadezter with his enemies list in command!')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -97,17 +98,27 @@ client.on('message', async message => {
    if (message.content === '$imc') {
       let imcembed = new Discord.RichEmbed()
       .setTitle('ImpladeMC - MC:BE Discord Server')
-      .addField('Click here to join our MC:BE server!', 'N/A')
-      .setDescription('Coming soon!')
+      .addField('Click here to join our MC:BE server!', 'https://discord.gg/DsKz9Za')
+      .setDescription('A some kind of faction mode! Better than ZythronPE!')
       return message.channel.send(imcembed);
     };   
     
     if (message.content === '$friends') {
-      let imcembed = new Discord.RichEmbed()
+      let friendsembed = new Discord.RichEmbed()
       .setTitle('[ Friends on Implade ]')
       .setDescription('This is some of people who is Zadezter`s friends on the list!')
-      return message.channel.send(imcembed);
+      .addField('---=_=---', 'MrLukePotatoes, JustyGamer45, TheMaskGuy11, WolfKid20044, DarkHyperCraft[Indo], MangoTheDev, Poofy, DarkPrinceHQ, xXLloydPlayZMCXx, YourAScrubMate, haKingdomsCraft, ItzFlqmee')
+      return message.channel.send(friendsembed);
     };   
+    
+    if (message.content === '$enemies') {
+      let enemiesembed = new Discord.RichEmbed()
+      .setTitle('[ Enemies on Implade ]')
+      .setDescription('This is some of people who is Zadezter`s victim or enemy on the list!')
+      .addField('A staff of ZythronPE, is currently in nonsense war against ImpladeMC!', 'BeckenPlayZMCPE, TheStormFlame, iRampage22, shawngillett, MuralFive5')
+      .addField('Other enemies', 'hung')
+      return message.channel.send(enemiesembed);
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
