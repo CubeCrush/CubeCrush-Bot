@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('using Implactor vIR-1.2.4.1', {type: 'STREAMING'});
+    client.user.setActivity('for working on Implactor vIR-1.2.4.3', {type: 'STREAMING'});
 });
 
 client.on('message', async message => {
