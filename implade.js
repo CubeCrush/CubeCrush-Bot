@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('for working on Implactor vIR-1.2.4.3', {type: 'STREAMING'});
+    client.user.setActivity('with Implactor = vIR-1.2.6.1', {type: 'PLAYING'});
 });
 
 client.on('message', async message => {
@@ -98,7 +98,7 @@ client.on('message', async message => {
    if (message.content === '$imc') {
       let imcembed = new Discord.RichEmbed()
       .setTitle('ImpladeMC - MC:BE Discord Server')
-      .addField('Click here to join our MC:BE server!', 'https://discord.gg/DsKz9Za')
+      .addField('Click here to join our MC:BE server!', 'https://discord.gg/Fn9et4b')
       .setDescription('A some kind of faction mode! Better than ZythronPE!')
       return message.channel.send(imcembed);
     };   
@@ -107,7 +107,7 @@ client.on('message', async message => {
       let friendsembed = new Discord.RichEmbed()
       .setTitle('[ Friends on Implade ]')
       .setDescription('This is some of people who is Zadezter`s friends on the list!')
-      .addField('---=_=---', 'MrLukePotatoes, JustyGamer45, TheMaskGuy11, WolfKid20044, DarkHyperCraft[Indo], MangoTheDev, Poofy, DarkPrinceHQ, xXLloydPlayZMCXx, YourAScrubMate, haKingdomsCraft, ItzFlqmee')
+      .addField('---=_=---', 'MrLukePotatoes, JustyGamer45, TheMaskGuy11, WolfKid20044, MangoTheDev, DarkPrinceHQ, xXLloydPlayZMCXx, YourAScrubMate, haKingdomsCraft, ItzFlqmee, apnazu, MrCubeCraft, DragonPlayzMC, xMatthewRagez11, NikosGamer666, xSentinql, XxMegaIS123xX, YassenTrick')
       return message.channel.send(friendsembed);
     };   
     
@@ -115,8 +115,8 @@ client.on('message', async message => {
       let enemiesembed = new Discord.RichEmbed()
       .setTitle('[ Enemies on Implade ]')
       .setDescription('This is some of people who is Zadezter`s victim or enemy on the list!')
-      .addField('A staff of ZythronPE, is currently in nonsense war against ImpladeMC!', 'BeckenPlayZMCPE, TheStormFlame, iRampage22, shawngillett, MuralFive5')
-      .addField('Other enemies', 'hung')
+      .addField('A staff of ZythronPE, is currently in nonsense war against ImpladeMC!', 'BeckenPlayZMCPE, TheStormFlame, iRampage22, shawngillett, MuralFive5, DarkHyperCraft[Indo])
+      .addField('Other enemies', 'hung, AlligatorChicken, Corey')
       return message.channel.send(enemiesembed);
     };
 });
