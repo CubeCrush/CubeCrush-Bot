@@ -115,7 +115,7 @@ client.on('message', async message => {
       let enemiesembed = new Discord.RichEmbed()
       .setTitle('[ Enemies on Implade ]')
       .setDescription('This is some of people who is Zadezter`s victim or enemy on the list!')
-      .addField('A staff of ZythronPE, is currently in nonsense war against ImpladeMC!', 'BeckenPlayZMCPE, TheStormFlame, iRampage22, shawngillett, MuralFive5, DarkHyperCraft[Indo])
+      .addField('A staff of ZythronPE, is currently in nonsense war against ImpladeMC!', 'BeckenPlayZMCPE, TheStormFlame, iRampage22, shawngillett, MuralFive5, DarkHyperCraft[Indo]')
       .addField('Other enemies', 'hung, AlligatorChicken, Corey')
       return message.channel.send(enemiesembed);
     };
