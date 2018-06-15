@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('on play.cubecrush.tk:19130', {type: 'PLAYING'});
+    client.user.setActivity('on play.cubecrush.tk:19130 | Prefix - >', {type: 'PLAYING'});
 });
 
 client.on('message', async message => {
@@ -26,6 +26,17 @@ client.on('message', async message => {
      .setImage(message.author.avatarURL + "?size=2048") 
      .setFooter(`Requested by ${message.author.tag}`)
      return message.channel.send(profileembed)
+    };
+    
+    if (message.content === '>ip') {
+     let ipembed = new Discord.RichEmbed()
+     .setTitle('CubeCrush Server IP&Port')
+     .setDescription('>help for More Commands')
+     .addField('IP - play.cubecrush.tk')
+     .addField('PORT - 19130')
+     .setColor('RANDOM')
+     .setFooter(` Requested by ${message.author.tag}`)
+     return message.channel.send(ipembed)
     };
 });
 
