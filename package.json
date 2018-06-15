@@ -1,30 +1,30 @@
 {
-  "name": "ImpladeBot",
+  "name": "CubeCrushBot",
   "version": "1.0.0",
-  "description": "A starter Discord bot",
-  "main": "implade.js",
+  "description": "Discord Bot for CubeCrush",
+  "main": "cubecrush.js",
   "engines": {
     "node": "10.0.0",
     "npm": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node implade.js"
+    "start": "node cubecrush.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ImpladeDeveloped/ImpladeBot.git"
+    "url": "git+https://github.com/CubeCrush/CubeCrush-Bot.git"
   },
   "keywords": [
     "heroku",
     "discord.js"
   ],
-  "author": "ImpladeDeveloped",
+  "author": "CubeCrush Dev-Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ImpladeDeveloped/ImpladeBot/issues"
+    "url": "https://github.com/CubeCrush/CubeCrush-Bot/issues"
   },
-  "homepage": "https://github.com/ImpladeDeveloped/ImpladeBot#readme",
+  "homepage": "https://github.com/CubeCrush/CubeCrush-Bot",
   "dependencies": {
     "discord.js": "11.3.2"
   }
