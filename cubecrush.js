@@ -18,6 +18,15 @@ client.on('message', async message => {
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
     };
+    
+   if (message.content === '>profile') {
+     let profileembed = new Discord.RichEmbed()
+     .setTitle('${message.author.tag} Your avatar is cool.')
+     .setColor('RANDOM')
+     .setImage(message.author.avatarURL + "?size=2048") 
+     .setFooter(`Requested by ${message.author.tag}`)
+     return message.channel.send(profileembed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
