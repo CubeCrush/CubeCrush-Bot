@@ -21,7 +21,7 @@ client.on('message', async message => {
     
     if (message.content === '>avatar') {
      let profileembed = new Discord.RichEmbed()
-     .setTitle('${message.author.tag} Your avatar is cool.')
+     .setTitle('Your avatar is cool.')
      .setColor('RANDOM')
      .setImage(message.author.avatarURL + "?size=2048") 
      .setFooter(`Requested by ${message.author.tag}`)
