@@ -11,7 +11,7 @@ client.on('message', async message => {
 
     if (message.content === '$help') {
       let helpembed = new Discord.RichEmbed()
-      .setTitle('- ImpladeBot | Commands -')
+      .setTitle('- CubeCrush Bot | Commands -')
       .setDescription('!')
       .addField('No Commands Yet')
       .setColor('RANDOM')
