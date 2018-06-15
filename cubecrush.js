@@ -12,8 +12,8 @@ client.on('message', async message => {
     if (message.content === '>help') {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- CubeCrush Bot | Commands -')
-      .setDescription('!')
-      .addField('No Commands Yet')
+      .setDescription('Prefix [ > ]')
+      .addField('>avatar - Gets your avatar ')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
