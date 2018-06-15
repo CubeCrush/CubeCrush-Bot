@@ -19,7 +19,7 @@ client.on('message', async message => {
       return message.channel.send(helpembed);
     };
     
-   if (message.content === '>avatar') {
+    if (message.content === '>avatar') {
      let profileembed = new Discord.RichEmbed()
      .setTitle('${message.author.tag} Your avatar is cool.')
      .setColor('RANDOM')
