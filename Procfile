@@ -1,1 +1,1 @@
-worker: node implade.js
+worker: node cubecrush.js
