@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', async message => {
     if (message.author.bot) return;
 
-    if (message.content === '$help') {
+    if (message.content === '>help') {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- CubeCrush Bot | Commands -')
       .setDescription('!')
