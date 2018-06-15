@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('on play.cubecrush.tk:19130 | Prefix - >', {type: 'PLAYING'});
+    client.user.setActivity('Prefix [ > ] | play.cubecrush.tk:19130', {type: 'PLAYING'});
 });
 
 client.on('message', async message => {
@@ -14,6 +14,7 @@ client.on('message', async message => {
       .setTitle('- CubeCrush Bot | Commands -')
       .setDescription('Prefix [ > ]')
       .addField('>avatar - Gets your avatar ')
+      .addField('>ip - Shows the IP and Port for CubeCrush ')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
