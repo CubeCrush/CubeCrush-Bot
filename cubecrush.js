@@ -16,6 +16,7 @@ client.on('message', async message => {
       .addField('>avatar - Gets your avatar ')
       .addField('>ip - Shows the IP and Port for CubeCrush ')
       .addField('>socialmedia - Show‛s CubeCrush Owner’s Social Media')
+      .addField('>botabout - Show`s About the Bot')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -52,6 +53,19 @@ client.on('message', async message => {
     .setColor('RANDOM')
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(socialmediaembed)
+    };
+    
+    if (message.content === '>botabout') {
+    let botaboutembed = new Discord.RichEmbed()
+    .setTitle('About CubeCrush`s Bot')
+    .setDescription('>help for More Commands')
+    .addField('Bot was created on 6/15/18')
+    .addField('Bot was hosted on Heroku')
+    .addField('MrLukePotatoes created the bot')
+    .addField('Bot made using JavaScript')
+    .setColor('RANDOM')
+    .setFooter(` Requested by ${message.author.tag}`)
+    return message.channel.send(botaboutembed)
     };
 });
 
