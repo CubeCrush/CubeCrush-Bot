@@ -52,6 +52,7 @@ client.on('message', async message => {
     .setColor('RANDOM')
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(socialmediaembed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
