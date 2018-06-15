@@ -15,6 +15,7 @@ client.on('message', async message => {
       .setDescription('Prefix [ > ]')
       .addField('>avatar - Gets your avatar ')
       .addField('>ip - Shows the IP and Port for CubeCrush ')
+      .addField('>socialmedia - Show‛s CubeCrush Owner’s Social Media')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -39,6 +40,18 @@ client.on('message', async message => {
      .setFooter(` Requested by ${message.author.tag}`)
      return message.channel.send(ipembed)
     };
+    
+    if (message.content === '>socialmedia') {
+    let socialmediaembed = new Discord.RichEmbed()
+    .setTitle('CubeCrush`s Owner [ MrCubeCraft ] Social Media')
+    .setDescription('>help for More Commands')
+    .addField('YouTube - https://youtube.com/MrCubeCraft ')
+    .addField('Twitter - https://bit.ly/TW-CUBY')
+    .addField('Google+ - https://bit.ly/GP-CUBY')
+    .addField('MrCubeCraft`s Website - https://bit.ly/cube-blog')
+    .setColor('RANDOM')
+    .setFooter(` Requested by ${message.author.tag}`)
+    return message.channel.send(socialmediaembed)
 });
 
 client.login(process.env.BOT_TOKEN);
