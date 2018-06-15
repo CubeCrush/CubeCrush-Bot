@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('Prefix [ > ] | play.cubecrush.tk:19130', {type: 'PLAYING'});
+    client.user.setActivity('Prefix [ > ] | ${client.users.size} Users at the CubeCrush Discord', {type: 'PLAYING'});
 });
 
 client.on('message', async message => {
@@ -17,8 +17,6 @@ client.on('message', async message => {
       .addField('>ip - Shows the IP and Port for CubeCrush ')
       .addField('>socialmedia - Show‛s CubeCrush Owner’s Social Media')
       .addField('>botabout - Show`s About the Bot')
-      .addField('>membercount - Tells how many players are in this server')
-      .addField('>channelcount - Tells how many channels are in this server')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -68,26 +66,6 @@ client.on('message', async message => {
     .setColor('RANDOM')
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(botaboutembed)
-    };
-    
-    if (message.content === '>membercount') {
-    let membercountembed = new Discord.RichEmbed()
-    .setTitle('CubeCrush Discord Server`s Member Count')
-    .setDescription('How many Players are here?')
-    .addField('There are ${client.users.size} Users in the CubeCrush Discord Server')
-    .setColor('RANDOM')
-    .setFooter(` Requested by $message.author.tag}`)
-    return message.channel.send(membercountembed)
-    };
-    
-    if (message.content === '>channelcount') {
-    let channelcountembed = new Discord.RichEmbed()
-    .setTitle('CubeCrush Discord Server`s Channel Count')
-    .setDescription('How many channels are here?')
-    .addField('There are ${client.channels.size} channels in the CubeCrush Discird Server')
-    .setColor('RANDOM')
-    .setFooter(` Requested by $message.author.tag}`)
-    return message.channel.send(channelcountembed)
     };
 });
 
