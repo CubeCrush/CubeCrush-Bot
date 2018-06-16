@@ -86,7 +86,8 @@ client.on('message', async message => {
     .addField('Join our server today by typing >ip')
     .setColor('RANDOM')
     .setFooter(` Requested by $message.author.tag}`)
-    return medsage.channel.send(auto1embed)
+    return message.channel.send(auto1embed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
