@@ -17,6 +17,7 @@ client.on('message', async message => {
       .addField('>ip - Shows the IP and Port for CubeCrush ')
       .addField('>socialmedia - Show‛s CubeCrush Owner’s Social Media')
       .addField('>botabout - Show`s About the Bot')
+      .addField('>discord - Gives you the CubeCrush Discord Server Link so You can share it')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -66,6 +67,16 @@ client.on('message', async message => {
     .setColor('RANDOM')
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(botaboutembed)
+    };
+    
+    if (message.content === '>discord') {
+    let discordembed = new Discord.RichEmbed()
+    .setTitle('CubeCrush Discord Server')
+    .setDescription('Send it around the world :)')
+    .addField('-> https://discord.gg/7NQRC4N')
+    .setColor('RANDOM')
+    .setFooter(` Requested by $message.author.tag}`)
+    return message.channel.send(discordembed)
     };
 });
 
