@@ -75,7 +75,7 @@ client.on('message', async message => {
     .setDescription('Send it around the world :)')
     .addField('-> https://discord.gg/7NQRC4N')
     .setColor('RANDOM')
-    .setFooter(` Requested by $message.author.tag}`)
+    .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(discordembed)
     };
 });
