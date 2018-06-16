@@ -78,6 +78,15 @@ client.on('message', async message => {
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(discordembed)
     };
+    
+    if (message.content === '>automessage1') {
+    let auto1embed = new Discord.RichEmbed()
+    .setTitle('[CubeCrush]')
+    .setDescription('vvvvvv')
+    .addField('Join our server today by typing >ip')
+    .setColor('RANDOM')
+    .setFooter(` Requested by $message.author.tag}`)
+    return medsage.channel.send(auto1embed)
 });
 
 client.login(process.env.BOT_TOKEN);
