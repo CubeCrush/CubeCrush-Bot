@@ -13,11 +13,11 @@ client.on('message', async message => {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- CubeCrush Bot | Commands -')
       .setDescription('Prefix [ > ]')
-      .addField('>avatar - Gets your avatar','')
-      .addField('>ip - Shows the IP and Port for CubeCrush','')
-      .addField('>socialmedia - Show‛s CubeCrush Owner’s Social Media','')
-      .addField('>botabout - Show`s About the Bot','')
-      .addField('>discord - Gives you the CubeCrush Discord Server Link so You can share it','')
+      .addField('>avatar - Gets your avatar',' ')
+      .addField('>ip - Shows the IP and Port for CubeCrush',' ')
+      .addField('>socialmedia - Show‛s CubeCrush Owner’s Social Media',' ')
+      .addField('>botabout - Show`s About the Bot',' ')
+      .addField('>discord - Gives you the CubeCrush Discord Server Link so You can share it',' ')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -37,11 +37,21 @@ client.on('message', async message => {
      let ipembed = new Discord.RichEmbed()
      .setTitle('CubeCrush Server IP&Port')
      .setDescription('>help for More Commands')
-     .addField('IP - play.cubecrush.tk','')
-     .addField('PORT - 19130','')
+     .addField('IP - play.cubecrush.tk',' ')
+     .addField('PORT - 19130',' ')
      .setColor('RANDOM')
      .setFooter(` Requested by ${message.author.tag}`)
      return message.channel.send(ipembed)
+    };
+    
+    if (message.content === '>botabout') {
+    let baembed = new Discord.RichEmbed()
+    .setTitle('About the CubeCrush Bot')
+    .setDescription(' ')
+    .addField('Made by MrLukePotatoes',' ')
+    .setColor('RANDOM')
+    .setFooter(` Requested by ${message.author.tag}`)
+    return message.channel.send(baembed)
     };
 });
 
