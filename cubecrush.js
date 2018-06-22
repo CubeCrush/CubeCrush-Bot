@@ -21,7 +21,7 @@ client.on('message', async message => {
     .addField('>user', 'Checks your discord user information!')
     .setColor('RANDOM')
     .setFooter(`Requested by ${message.author.tag}`)
-    return message.channel.send(helpembed);
+    return message.channel.send(helpembed)
     };
     
     if (message.content === '>avatar') {
