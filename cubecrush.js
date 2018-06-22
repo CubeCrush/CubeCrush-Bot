@@ -69,6 +69,20 @@ client.on('message', async message => {
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(baembed)
     };
+    
+    if (message.content === '>user @CubeCrush') {
+    let uccbembed = new Discord.RichEmbed()
+    .setTitle('About the CubeCrush Bot')
+    .setDescription(' ')
+    .addField('Made by MrLukePotatoes', '^_^')
+    .addField('Version', 'CC-0.1')
+    .setThumbnail(client.user.avatarURL)
+    .addField('Created on:', client.user.createdAt)
+    .addField('Bot name:', client.user.username)
+    .setColor('RANDOM')
+    .setFooter(` Requested by ${message.author.tag}`)
+    return message.channel.send(uccbembed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
