@@ -18,7 +18,7 @@ client.on('message', async message => {
     .addField('>socialmedia', 'Show‛s CubeCrush Owner’s Social Media')
     .addField('>botabout', 'Show about the Bot information!')
     .addField('>discord', 'Gives you the CubeCrush Discord Server Link so You can share it')
-    .addField('>user', 'Check your user information!')
+    .addField('>user', 'Checks your discord user information!')
     .setColor('RANDOM')
     .setFooter(`Requested by ${message.author.tag}`)
     return message.channel.send(helpembed);
@@ -46,7 +46,7 @@ client.on('message', async message => {
     
     if (message.content === '>user') {
     let userembed = new Discord.RichEmbed()
-    .setTitle(`${message.author.tag}'s Info`)
+    .setTitle(`${message.author.tag}'s Discord User Info`)
     .setColor('RANDOM')
     .setThumbnail(client.user.avatarURL)
     .addField('Your ID:', message.author.id, true)
