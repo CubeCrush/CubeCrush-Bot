@@ -94,6 +94,16 @@ client.on('message', async message => {
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(ipembed)
     };
+    
+    if (message.content === '>discord') {
+    let dcembed = new Discord.RichEmbed()
+    .setTitle('CubeCrush Discord Link')
+    .setDescription('Share VVVVV')
+    .addField('-', 'https://discord.gg/7NQRC4N')
+    .setColor('RANDOM')
+    .setFooter(` Requested by ${message.author.tag}`)
+    return message.channel.send(dcembed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
