@@ -83,6 +83,17 @@ client.on('message', async message => {
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(uccbembed)
     };
+    
+    if (message.content === '>ip') {
+    let ipembed = new Discord.RichEmbed()
+    .setTitle('CubeCrush Server IP & PORT')
+    .setDescription('>help for more commands')
+    .addField('IP', 'play.cubecrush.tk')
+    .addField('PORT', '19130')
+    .setColor('RANDOM')
+    .setFooter(` Requested by ${message.author.tag}`)
+    return message.channel.send(ipembed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
