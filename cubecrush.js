@@ -70,7 +70,7 @@ client.on('message', async message => {
     return message.channel.send(baembed)
     };
     
-    if (message.content === '>user @CubeCrush') {
+    if (message.content === '>user @CubeCrush#7587') {
     let uccbembed = new Discord.RichEmbed()
     .setTitle('About the CubeCrush Bot')
     .setDescription(' ')
