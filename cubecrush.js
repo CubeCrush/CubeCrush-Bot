@@ -13,7 +13,7 @@ client.on('message', async message => {
     let helpembed = new Discord.RichEmbed()
     .setTitle('- CubeCrush Bot | Commands -')
     .setDescription('Prefix [ > ]')
-    .addField('>avatar', 'Gets your avatar',' ')
+    .addField('>avatar', 'Gets your avatar')
     .addField('>ip', 'Shows the IP and Port for CubeCrush')
     .addField('>socialmedia', 'Show‛s CubeCrush Owner’s Social Media')
     .addField('>botabout', 'Show about the Bot information!')
