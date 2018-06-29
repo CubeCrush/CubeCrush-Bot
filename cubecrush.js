@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('Prefix [ > ] | play.cubecrush.tk | 19130', {type: 'PLAYING'});
+    client.user.setActivity('Prefix [ > ] | play.cubecrush.tk | 19130 [ Without Kurupt CubeCrush will be better ]', {type: 'PLAYING'});
 });
 
 client.on('message', async message => {
