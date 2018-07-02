@@ -1,1 +1,1 @@
-worker: node cubecrush.js
+worker: node nexus.js
