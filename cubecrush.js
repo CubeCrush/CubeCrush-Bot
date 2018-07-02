@@ -36,9 +36,9 @@ client.on('message', async message => {
     
     if (message.content === '>ip') {
     let ipembed = new Discord.RichEmbed()
-    .setTitle('CubeCrush Server IP&Port')
+    .setTitle('Nexus Server IP & Port')
     .setDescription('>help for More Commands')
-    .addField('IP - play.cubecrush.tk','Port - 19130')
+    .addField('IP - play.nexuspe.tk','Port - 19130')
     .setColor('RANDOM')
     .setFooter(` Requested by ${message.author.tag}`)
     return message.channel.send(ipembed)
